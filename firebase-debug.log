@@ -1,0 +1,21 @@
+[debug] [2025-05-16T06:01:58.442Z] ----------------------------------------------------------------------
+[debug] [2025-05-16T06:01:58.446Z] Command:       D:\Archivos de programa\nodejs\node.exe D:\Archivos de programa\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-05-16T06:01:58.446Z] CLI Version:   14.4.0
+[debug] [2025-05-16T06:01:58.446Z] Platform:      win32
+[debug] [2025-05-16T06:01:58.446Z] Node Version:  v20.11.1
+[debug] [2025-05-16T06:01:58.446Z] Time:          Fri May 16 2025 01:01:58 GMT-0500 (hora estándar de Colombia)
+[debug] [2025-05-16T06:01:58.446Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-16T06:01:58.452Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-16T06:01:58.453Z] > authorizing via signed-in user (harryhaller30@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\react\mi-artista-favorito
+

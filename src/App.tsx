@@ -1,26 +1,33 @@
+// App.tsx
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Inicio from './pages/inicio/Inicio';
+import Favoritos from './pages/favoritos/Favoritos';
+import Header from './shared/header/Header';
+import { Container, Row, Col } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
+import { RootState } from './store';
 
-function App() {
+const App: React.FC = () => {
+  const bandas_ = useSelector((state: RootState) => state.bandasReducer.bandas);
+  // Filtrar las bandas que tienen favorito en true
+  const bandasFavoritas = bandas_.filter((banda) => banda.favorito);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Container>
+        <Row>
+          <Col>
+            <Header />
+          </Col>
+        </Row>
+      </Container>
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="favoritos" element={<Favoritos bandas={bandasFavoritas} />} />
+        <Route path="*" element={<Inicio />} />
+      </Routes>        
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
