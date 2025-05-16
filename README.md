@@ -1,46 +1,59 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Bandas favoritas
 
-## Available Scripts
+Descripción de la aplicación
+Esta es una sencilla aplicación desarrollada con React que cuenta con dos vistas principales:
 
-In the project directory, you can run:
+Página principal: muestra una lista de cinco bandas de heavy metal, cada una con cinco canciones destacadas. Desde esta vista, el usuario puede agregar o quitar bandas de su lista de favoritos.
 
-### `npm start`
+Página de favoritos: presenta únicamente las bandas que el usuario ha marcado como favoritas. Desde aquí también es posible eliminar bandas de la lista.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+El objetivo principal de esta aplicación es demostrar el uso de Redux Toolkit para la gestión del estado global. Cada vez que se agrega o elimina una banda de la lista de favoritos, el estado se actualiza de forma reactiva, y ambas vistas reflejan los cambios en tiempo real.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Application Description
+This is a simple application built with React, featuring two main views:
 
-### `npm run build`
+Main page: Displays a list of five heavy metal bands, each with five featured songs. From this page, users can add or remove bands from their list of favorites.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Favorites page: Shows only the bands the user has marked as favorites. Bands can also be removed from the favorites list on this page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The main goal of this application is to demonstrate the use of Redux Toolkit for global state management. Whenever a band is added to or removed from the favorites list, the state is updated reactively, and both views reflect the changes in real time.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[![agregadas.jpg](https://i.postimg.cc/mrk46Q7X/agregadas.jpg)](https://postimg.cc/G4W64T7G)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[![favoritos.jpg](https://i.postimg.cc/LXZpm2Cj/favoritos.jpg)](https://postimg.cc/G8rNQw1p)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Redux
 
-## Learn More
+[![sin-agregar.jpg](https://i.postimg.cc/cHPqr2gw/sin-agregar.jpg)](https://postimg.cc/7G1tRBNZ)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[![agregada.jpg](https://i.postimg.cc/TPmNt1pL/agregada.jpg)](https://postimg.cc/Z9bLRTP4)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Installation
+
+Clone project
+
+```bash
+  git clone https://github.com/JairSilva09/bandas-favoritas.git
+  cd bandas-favoritas
+  npm install
+  npm start
+```
+    
+## Authors
+
+- [@JairSilva09](https://www.github.com/JairSilva09)
+
+
+## Tech Stack
+
+**Client:** React, Redux
+
+**Server:** Node
+
